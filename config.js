@@ -9,22 +9,22 @@ global.setting = {
  }
 
 global.owner = [
-['212717457920', 'Nour', true],
-['212605784394', 'imillie', false],
-['212693227969', '8bal', false]
+['212777532483', '❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵', true],
+['212777532483', 'imillie', false],
+['212777532483', '8bal', false]
 ]
 
 global.info = {
- nomerbot: '212605784394',
- pairingNumber: '212693227969',
- nameown: 'Nour',
- nomerown: '212717457920',
- packname: 'sticker by ',
- author: 'Noureddine',
+ nomerbot: '212777532483',
+ pairingNumber: '212777532483',
+ nameown: '212777532483',
+ nomerown: '212777532483',
+ packname: '❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵🤍🍃 ',
+ author: '❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵',
  namebot: 'ꜱɪʟᴀɴᴀ',
- wm: ''-'_꩜ 𝘚𝘪𝘭𝘢𝘯𝘢 𝘣𝘰𝘵 ꩜_'-'',
- stickpack: 'Whatsapp',
- stickauth: 'ꜱɪʟᴀɴᴀ ʙᴏᴛ '
+ wm: ''-'_꩜❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵꩜_'-'',
+ stickpack: '❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵🤍🍃',
+ stickauth: '❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵 '
 }
 
 // Thumbnail 
@@ -42,13 +42,6 @@ global.media = {
  wel: 'https://telegra.ph/file/9dbc9c39084df8691ebdd.mp4', // gif welcome 
  bye: 'https://telegra.ph/file/1c05b8c019fa525567d01.mp4', // gif good bye
  sound: 'https://media.vocaroo.com/mp3/1awgSZYHXP3B' // untuk menu
-}
-
-// Sosmed
-global.url = {
- sig: 'https://instagram.com/noureddine_ouafy',
- sgh:  'https://github.com/noureddineouafy',
- sgc: 'https://chat.whatsapp.com/DABxracGsi5CQMd5d1N1j7'
 }
 
 global.wait =` انتظر .. أنا أحاول تلبية طلبك ...`
