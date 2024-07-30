@@ -1,17 +1,17 @@
 import yts from 'yt-search'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper-sosmed'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw ` مثال :\n> *.اغنية* حلمي تحطم واختفى`
+  if (!text) throw ` مثال :\n> *.صوت سورة الكهف*`
   let res = await yts(text)
   let vid = res.videos[0]
-  await conn.sendMessage(m.chat, { react: { text: "👑",key: m.key,}
- { text: "🚀",key: m.key,}
-conn.sendMessage(m.chat, { react: { text: "🥺",key: m.key,}
- })
-
+  await conn.sendMessage(m.chat, { react: { text: "💗",key: m.key,}
+  })  
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
-  const 
+  const url = 'https://www.youtube.com/watch?v=' + videoId
+let vap = `*〔 🧚🏻‍♀️❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵🧚🏻‍♀️ 〕*
+
+*عنوان المقطع:* ${title}`
 
 conn.sendMessage(m.chat, {
 text: vap,
@@ -31,19 +31,17 @@ const link = await yt.audio['128kbps'].download()
 }, 
 mimetype: 'audio/mp4', fileName: `${title}`, contextInfo: { externalAdReply: { showAdAttribution: true,
 mediaType:  2,
-mediaUrl: url,
 title: title,
 body: "© ❀𝑯𝑨𝑹𝑳𝑬𝒀 𝑸𝑼𝑰𝑵𝑵",
-sourceUrl: url,
 thumbnail: await(await conn.getFile(thumbnail)).data                                                                     
                                                                                                                  }
                        }
   }
   return conn.sendMessage(m.chat, doc, { quoted: m })
 }
-handler.help = ['play','اغنية']
+handler.help = ['music','موسيقى','اغنية']
 handler.tags = ['downloader']
-handler.command = /^play|اغنية$/i
+handler.command = /^music|موسيقى|اغنية$/i
 
 export default handler
 
