@@ -5,15 +5,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let res = await yts(text)
   let vid = res.videos[0]
   await conn.sendMessage(m.chat, { react: { text: "👑",key: m.key,}
-  })  
 await conn.sendMessage(m.chat, { react: { text: "🚀",key: m.key,}
 await conn.sendMessage(m.chat, { react: { text: "🥺",key: m.key,}
-await conn.sendMessage(m.chat, { react: { text: "💖",key: m.key,}
-await conn.sendMessage(m.chat, { react: { text: "☑️",key: m.key,}
-  })
-  })
-  })
-  })
+await conn.sendMessage(m.chat, { react: { text: "💖",key: m.key,} })
 
   if (!vid) throw 'لم يتم العثور عليه، حاول عكس العنوان والمؤلف'
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
@@ -47,9 +41,9 @@ thumbnail: await(await conn.getFile(thumbnail)).data
   }
   return conn.sendMessage(m.chat, doc, { quoted: m })
 }
-handler.help = ['song','play','صوت','اغنية']
+handler.help = ['song','play','اغنية']
 handler.tags = ['downloader']
-handler.command = /^song|play|اغنية|صوت$/i
+handler.command = /^song|play|اغنية$/i
 
 export default handler
 
