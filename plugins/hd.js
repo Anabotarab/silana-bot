@@ -14,18 +14,16 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   if (!mime) throw `${tradutor.texto1} ${usedPrefix + command}*`;
   if (!/image\/(jpe?g|png)/.test(mime)) throw `${tradutor.texto2[0]} (${mime}) ${tradutor.texto2[1]}`;
   m.reply(tradutor.texto3);
-await conn.sendMessage(m.chat, { react: { text: "🎀",key: m.key,}
-  })
-   let img = await q.download?.();
+  let img = await q.download?.();
   let pr = await remini(img, "enhance");
   conn.sendMessage(m.chat, {image: pr}, {quoted: m});
  } catch {
   throw tradutor.texto4;
  }
 };
-handler.help = ["remini", "hd", "جودة"];
-handler.tags = ["ai", "tools"];
-handler.command = ["remini", "hd", "جودة"];
+handler.help = ["hd", "جودة"];
+handler.tags = ["tools"];
+handler.command = ["hd", "جودة"];
 export default handler;
 
 async function remini(imageData, operation) {
