@@ -23,9 +23,9 @@ await conn.sendMessage(m.chat, { react: { text: "🎀",key: m.key,}
   throw tradutor.texto4;
  }
 };
-handler.help = ["remini", "hd", "enhance"];
+handler.help = ["remini", "hd", "جودة"];
 handler.tags = ["ai", "tools"];
-handler.command = ["remini", "hd", "enhance"];
+handler.command = ["remini", "hd", "جودة"];
 export default handler;
 
 async function remini(imageData, operation) {
